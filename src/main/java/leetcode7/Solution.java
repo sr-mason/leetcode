@@ -24,4 +24,17 @@ public class Solution {
         }
         return lengthNum;
     }
+    public int reverseSecondVersion(int x) {
+        try {
+            return (x / Math.abs(x)) * (Integer.parseInt(new StringBuilder((Integer.valueOf(Math.abs(x)).toString())).reverse().toString()));
+        } catch (NumberFormatException | ArithmeticException e) {
+            return 0;
+        }
+
+    }
+
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        System.out.println(solution.reverseSecondVersion(-1423));
+    }
 }
