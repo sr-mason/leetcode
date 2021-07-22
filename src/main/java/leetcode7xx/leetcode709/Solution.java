@@ -1,4 +1,4 @@
-package leetcode709;
+package leetcode7xx.leetcode709;
 
 public class Solution {
     public String toLowerCase(String s) {
