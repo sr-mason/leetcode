@@ -1,4 +1,4 @@
-package leetcode977;
+package leetcode9xx.leetcode977;
 
 public class Solution {
     public int[] sortedSquares(int[] nums) {
