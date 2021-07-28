@@ -5,23 +5,15 @@ public class Solution {
         if (s.length() == 1) {
             return s;
         }
-        if (s.length() == 2) {
-            if (s.charAt(0) != s.charAt(1)) {
-                return s.substring(0, 1);
-            }
-        }
         int maxLength = 0;
         String result = "";
+        String tempEven;
+        String tempOdd;
         String temp;
         for (int i = 0; i < s.length() - 1; i++) {
-            temp = searchPalindromic(s, i, i + 1);
-            if (temp.length() > maxLength) {
-                maxLength = temp.length();
-                result = temp;
-            }
-        }
-        for (int i = 1; i < s.length() - 1; i++) {
-            temp = searchPalindromic(s, i - 1, i + 1);
+            tempEven = searchPalindromic(s, i, i + 1);
+            tempOdd = searchPalindromic(s, i, i);
+            temp = (tempEven.length() > tempOdd.length()) ? tempEven : tempOdd;
             if (temp.length() > maxLength) {
                 maxLength = temp.length();
                 result = temp;
