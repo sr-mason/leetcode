@@ -1,4 +1,4 @@
-package leetcode500;
+package leetcode5xx.leetcode500;
 
 import java.util.*;
 
@@ -22,22 +22,22 @@ public class Solution {
         }
         int count = 0;
         List<String> list = new ArrayList<>();
-        for (int i = 0; i < words.length; i++) {
-            char[] temp = words[i].toLowerCase().toCharArray();
+        for (String word : words) {
+            char[] temp = word.toLowerCase().toCharArray();
             Set<Character> tempSet = new HashSet<>();
-            for (Character t: temp) {
+            for (Character t : temp) {
                 tempSet.add(t);
             }
             if (setLine1.containsAll(tempSet)) {
-                list.add(words[i]);
+                list.add(word);
                 count++;
             }
             if (setLine2.containsAll(tempSet)) {
-                list.add(words[i]);
+                list.add(word);
                 count++;
             }
             if (setLine3.containsAll(tempSet)) {
-                list.add(words[i]);
+                list.add(word);
                 count++;
             }
         }

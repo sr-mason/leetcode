@@ -1,4 +1,4 @@
-package leetcode541;
+package leetcode5xx.leetcode541;
 
 public class Solution {
     public String reverseStr(String s, int k) {
