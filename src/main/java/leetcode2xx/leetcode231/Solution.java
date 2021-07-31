@@ -1,4 +1,4 @@
-package leetcode231;
+package leetcode2xx.leetcode231;
 
 public class Solution {
     public boolean isPowerOfTwo(int n) {

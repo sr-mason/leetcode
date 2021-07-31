@@ -1,4 +1,4 @@
-package leetcode151;
+package leetcode1xx.leetcode151;
 
 public class Solution {
     public String reverseWords(String s) {

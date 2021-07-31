@@ -1,4 +1,4 @@
-package leetcode1929;
+package leetcode19xx.leetcode1929;
 
 public class Solution {
     public int[] getConcatenation(int[] nums) {
